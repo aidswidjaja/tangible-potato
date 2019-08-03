@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>r/teenagers</title>
+
+<!-- © Adrian Widjaja @adrianpenguin1 | GPL v3.0 -->
+
+<!-- Bootstrap -->
+<link href="css/bootstrap.css" rel="stylesheet">
+
+<!-- Bootstrap override -->
+
+<style type="text/css">
+   body { background: #343A40 !important; margin: 12px;}
+   html { font-family: 'IBM Plex Sans' !important;}
+   html { color: #f8f9fa !important;} /* Screw you Chrome */
+</style>
+
+<!-- IBM Plex Sans -->
+
+<link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans&display=swap" rel="stylesheet"> 
+
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+
+<div class="container-fluid">
+  <div class="col-12 bg-light">
+  	<div class="row">
+  		<div class="col-4 rounded bg-info">
+  			<script>
+  				var requestURL = 'https://mdn.github.io/learning-area/javascript/oojs/json/superheroes.json';
+				var request = new XMLHttpRequest();
+				request.open('GET', requestURL);
+				request.responseType = 'json';
+				request.send();
+				request.onload = function() {
+					var title = request.response;
+  				populateHeader(title); 
+  				showTitle(title);
+				showUpvotes(ups);
+				showDownvotes(downs)
+											}
+			</script>
+		</div>
+  	</div>
+  </div>
+  
+  <br>
+  <div class="col-12 bg-secondary rounded">The pineapple is a tropical plant with an edible fruit, also called pineapples, and the most economically significant plant in the family Bromeliaceae. Pineapples may be cultivated from the offset produced at the top of the fruit, possibly flowering in five to ten months and fruiting in the following six months.</div>
+
+  <br>
+  <div class="col-12 bg-warning">The pineapple is a tropical plant with an edible fruit, also called pineapples, and the most economically significant plant in the family Bromeliaceae. Pineapples may be cultivated from the offset produced at the top of the fruit, possibly flowering in five to ten months and fruiting in the following six months.</div>
+</div>
+
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+<script src="js/jquery-1.11.3.min.js"></script>
+
+<!-- Include all compiled plugins (below), or include individual files as needed --> 
+<script src="js/bootstrap.js"></script>
+</body>
+</html>
