@@ -10,7 +10,7 @@
 // Creative Commons Zero v1.0 Universal - thanks guys!
 
 var myList = document.querySelector('ul');
-const url = 'https://www.reddit.com/r/teenagers/new.json?sort=hot';
+const url = 'https://www.reddit.com/r/teenagers.json';
    
 fetch(url)
     .then(function(response) {
