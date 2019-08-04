@@ -19,11 +19,12 @@ fetch(url)
       }
       return response.json();
     })
-    .then(function(json) {
-      for(var i = 0; i < json.data.length; i++) {
-        var listItem = document.createElement('p');
-        listItem.innerHTML = json.kind+ 'did it work?';
-		
+	.then(function(json) {
+      for(var i = 0; i < json.products.length; i++) {
+        var listItem = document.createElement('li');
+        listItem.innerHTML = '<strong>' + json.data[i].modhash + '</strong>';
+        listItem.innerHTML += json.data[i].dist + '.';
+        myList.appendChild(listItem);
       }
     })
     .catch(function(error) {
