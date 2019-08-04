@@ -20,7 +20,7 @@ fetch(url)
       return response.json();
     })
 	.then(function(json) {
-      for(var i = 0; i < json.products.length; i++) {
+      for(var i = 0; i < json.data.length; i++) {
         var listItem = document.createElement('li');
         listItem.innerHTML = '<strong>' + json.data[i].modhash + '</strong>';
         listItem.innerHTML += json.data[i].dist + '.';
