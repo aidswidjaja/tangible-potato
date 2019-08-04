@@ -36,20 +36,9 @@
   <div class="col-12 bg-light">
   	<div class="row">
   		<div class="col-4 rounded bg-info">
-  			<script>
-  				var requestURL = 'https://mdn.github.io/learning-area/javascript/oojs/json/superheroes.json';
-				var request = new XMLHttpRequest();
-				request.open('GET', requestURL);
-				request.responseType = 'json';
-				request.send();
-				request.onload = function() {
-					var title = request.response;
-  				populateHeader(title); 
-  				showTitle(title);
-				showUpvotes(ups);
-				showDownvotes(downs)
-											}
-			</script>
+  			<div id="myData">
+  				<script src="jsonfetch.js"></script>
+  			</div>
 		</div>
   	</div>
   </div>
