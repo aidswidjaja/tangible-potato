@@ -10,12 +10,13 @@
 // Creative Commons Zero v1.0 Universal - thanks guys!
 
 var myList = document.querySelector('ul');
+const url = 'https://www.reddit.com/r/teenagers.json';
    
-fetch('https://google.com')
+fetch(url)
     .then(function(response) {
       if (!response.ok) { // MDN implementation - Google implementation of Response Status check doesn't work haha
         throw new Error("uh oh: Response Status = " + response.status);
-      }
+      }	
       return response.json();
     })
 	.then(function(json) {

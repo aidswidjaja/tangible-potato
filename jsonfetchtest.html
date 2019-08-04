@@ -7,7 +7,33 @@
 
 <body>
 <div>
-	<script src="jsonfetch.js"></script>
+	<script>
+	var myList = document.querySelector('ul');
+const url = 'https://www.reddit.com/r/teenagers.json';
+   
+fetch(url)
+    .then(function(response) {
+      if (!response.ok) { // MDN implementation - Google implementation of Response Status check doesn't work haha
+        throw new Error("uh oh: Response Status = " + response.status);
+      }	
+      return response.json();
+    })
+	.then(function(json) {
+      for(var i = 0; i < json.data.length; i++) {
+        var listItem = document.createElement('li');
+        listItem.innerHTML = '<strong>' + json.data[i].modhash + '</strong>';
+        listItem.innerHTML += json.data[i].dist + '.';
+        myList.appendChild(listItem);
+      }
+    })
+    .catch(function(error) {
+      var p = document.createElement('p');
+      p.appendChild(
+        document.createTextNode('uh oh: ' + error.message)
+      );
+      document.body.insertBefore(p, myList);
+    });
+	</script>
 </div>
 </body>
 </html>
