@@ -25,7 +25,7 @@ fetch(requestURL)
 .then(function(json) {
   var listItem = document.createElement('h1');
   // get ready!
-  var contents = json.data && json.data.children && json.data.children["2"] && json.data.children["2"].data && json.data.children["2"].data.title;i
+  var contents = json.data && json.data.children && json.data.children["2"] && json.data.children["2"].data && json.data.children["2"].data.title;
   listItem.innerHTML = contents;
   myList.appendChild(listItem);
 
