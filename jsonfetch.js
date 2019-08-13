@@ -12,7 +12,7 @@
 // Creative Commons Zero v1.0 Universal - thanks guys!
 // based off the MDN fetch() example at https://github.com/mdn/fetch-examples/blob/master/fetch-json/index.html
 
-var myList = document.querySelector('p');
+var divSelect = document.querySelector('p');
 var requestURL = 'https://www.reddit.com/r/teenagers.json';
 
 fetch(requestURL)
@@ -23,19 +23,34 @@ fetch(requestURL)
   return response.json();
 })
 .then(function(json) {
-  var listItem = document.createElement('h1');
+  var createHeader = document.createElement('h1');
+  var createPara = document.createElement('p');
+  var createBold = document.createElement('b');
+  var createBolder = document.createElement('b');
   // get ready!
   var contents = json.data && json.data.children && json.data.children["2"] && json.data.children["2"].data && json.data.children["2"].data.title;
-  listItem.innerHTML = contents;
-  myList.appendChild(listItem);
-
+  createHeader.innerHTML = contents;
+  var username = json.data && json.data.children && json.data.children["2"] && json.data.children["2"].data && json.data.children["2"].data.author;
+  createPara.innerHTML = "👤 " + username;
+  var potato = json.data && json.data.children && json.data.children["2"] && json.data.children["2"].data && json.data.children["2"].data.ups;
+  createBold.innerHTML = potato + " upvotes";
+  var tomato = json.data && json.data.children && json.data.children["2"] && json.data.children["2"].data && json.data.children["2"].data.downs;
+  var linebreak = document.createElement('br');
+  createBolder.innerHTML = tomato + " downvotes";
+  var grassJellyDrink = json.data && json.data.children && json.data.children["2"] && json.data.children["2"].data && json.data.children["2"].data.permalink;
+  // to be done
+  divSelect.appendChild(createHeader);
+  divSelect.appendChild(createPara);
+  divSelect.appendChild(createBold);
+  divSelect.appendChild(linebreak);
+  divSelect.appendChild(createBolder);
 })
 .catch(function(error) {
   var p = document.createElement('p');
   p.appendChild(
     document.createTextNode('uh oh: ' + error.message)
   );
-  document.body.insertBefore(p, myList);
+  document.body.insertBefore(p, divSelect);
 });
 
 
