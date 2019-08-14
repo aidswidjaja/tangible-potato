@@ -10,12 +10,11 @@
 /* jshint esversion: 6*/ // yay my dreamweaver errors are gone!
 
 // Creative Commons Zero v1.0 Universal - thanks guys!
-// based off the MDN fetch() example at https://github.com/mdn/fetch-examples/blob/master/fetch-json/index.html
+// adapted from the MDN fetch() example at https://github.com/mdn/fetch-examples/blob/master/fetch-json/index.html
 
-var divSelect = document.querySelector('p');
-var requestURL = 'https://www.reddit.com/r/teenagers.json';
+// Unfortunately variables had to be moved inside a function as scope issues conflicted with another script
 
-fetch(requestURL)
+fetch('https://www.reddit.com/r/teenagers.json')
 .then(function(response) {
   if (!response.ok) {
     throw new Error("uh oh: HTTP error, status = " + response.status); // error checking
@@ -23,27 +22,33 @@ fetch(requestURL)
   return response.json();
 })
 .then(function(json) {
+  var pSelect = document.querySelector('p');
+  var aSelect = document.querySelector('a');
+  var requestURL = 'https://www.reddit.com/r/teenagers.json';
+
   var createHeader = document.createElement('h1');
   var createPara = document.createElement('p');
   var createBold = document.createElement('b');
   var createBolder = document.createElement('b');
+  var createPineapple = document.createElement('p'); // unused
+  var createOrange = document.createElement('p'); // unused
+
   // get ready!
-  var contents = json.data && json.data.children && json.data.children["2"] && json.data.children["2"].data && json.data.children["2"].data.title;
+  var contents = json.data && json.data.children && json.data.children["1"] && json.data.children["1"].data && json.data.children["1"].data.title;
   createHeader.innerHTML = contents;
-  var username = json.data && json.data.children && json.data.children["2"] && json.data.children["2"].data && json.data.children["2"].data.author;
-  createPara.innerHTML = "👤 " + username;
-  var potato = json.data && json.data.children && json.data.children["2"] && json.data.children["2"].data && json.data.children["2"].data.ups;
-  createBold.innerHTML = potato + " upvotes";
-  var tomato = json.data && json.data.children && json.data.children["2"] && json.data.children["2"].data && json.data.children["2"].data.downs;
+  var username = json.data && json.data.children && json.data.children["1"] && json.data.children["1"].data && json.data.children["1"].data.author;
+  createPara.innerHTML = "by " + username;
+  var potato = json.data && json.data.children && json.data.children["1"] && json.data.children["1"].data && json.data.children["1"].data.score;
+  createBold.innerHTML = potato + " points";
   var linebreak = document.createElement('br');
-  createBolder.innerHTML = tomato + " downvotes";
-  var grassJellyDrink = json.data && json.data.children && json.data.children["2"] && json.data.children["2"].data && json.data.children["2"].data.permalink;
-  // to be done
-  divSelect.appendChild(createHeader);
-  divSelect.appendChild(createPara);
-  divSelect.appendChild(createBold);
-  divSelect.appendChild(linebreak);
-  divSelect.appendChild(createBolder);
+  var grassJellyDrink = json.data && json.data.children && json.data.children["1"] && json.data.children["1"].data && json.data.children["1"].data.permalink;
+  document.getElementById("redditlink").href = "https://reddit.com" + grassJellyDrink;
+
+  aSelect.appendChild(createHeader);
+  pSelect.appendChild(createPara);
+  pSelect.appendChild(createBold);
+  pSelect.appendChild(linebreak);
+  pSelect.appendChild(createBolder);
 })
 .catch(function(error) {
   var p = document.createElement('p');
