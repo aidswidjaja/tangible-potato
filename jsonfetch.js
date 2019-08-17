@@ -22,8 +22,8 @@ fetch('https://www.reddit.com/r/teenagers.json')
   return response.json();
 })
 .then(function(json) {
-  var pSelect = document.querySelector('p');
-  var aSelect = document.querySelector('a');
+  var pSelect = document.querySelector('#reddita');
+  var aSelect = document.querySelector('#redditlink');
   var requestURL = 'https://www.reddit.com/r/teenagers.json';
 
   var createHeader = document.createElement('h1');
@@ -34,15 +34,16 @@ fetch('https://www.reddit.com/r/teenagers.json')
   var createOrange = document.createElement('p'); // unused
 
   // get ready!
-  var contents = json.data && json.data.children && json.data.children["1"] && json.data.children["1"].data && json.data.children["1"].data.title;
-  createHeader.innerHTML = contents;
-  var username = json.data && json.data.children && json.data.children["1"] && json.data.children["1"].data && json.data.children["1"].data.author;
-  createPara.innerHTML = "by " + username;
-  var potato = json.data && json.data.children && json.data.children["1"] && json.data.children["1"].data && json.data.children["1"].data.score;
-  createBold.innerHTML = potato + " points";
-  var linebreak = document.createElement('br');
   var grassJellyDrink = json.data && json.data.children && json.data.children["1"] && json.data.children["1"].data && json.data.children["1"].data.permalink;
-  document.getElementById("redditlink").href = "https://reddit.com" + grassJellyDrink;
+  document.getElementById("redditlink").href = "https://reddit.com" + grassJellyDrink; // Permalink
+  var contents = json.data && json.data.children && json.data.children["1"] && json.data.children["1"].data && json.data.children["1"].data.title;
+  createHeader.innerHTML = contents; // Title
+  var username = json.data && json.data.children && json.data.children["1"] && json.data.children["1"].data && json.data.children["1"].data.author;
+  createPara.innerHTML = "by " + username; // Author
+  var potato = json.data && json.data.children && json.data.children["1"] && json.data.children["1"].data && json.data.children["1"].data.score;
+  createBold.innerHTML = potato + " points"; // Score
+  var linebreak = document.createElement('br');
+
 
   aSelect.appendChild(createHeader);
   pSelect.appendChild(createPara);

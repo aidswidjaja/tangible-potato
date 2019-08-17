@@ -47,7 +47,7 @@ $(function () {
 <body>
 <br>
 
-<div class="row-fluid col-12 rounded d-flex", style="height:30vh;"> <!-- Start of row 1-->
+<div class="container col-12 rounded d-flex", style="height:30vh;"> <!-- Start of row 1-->
 
 <!-- Live post from reddit-->
 
@@ -57,7 +57,7 @@ $(function () {
           <b>What's happening on r/teenagers?</b>
         </div>
       <a id="redditlink" href="www.reddit.com/r/teenagers"></a>
-      <p></p>
+      <p id="reddita"></p>
       <script src="jsonfetch.js"></script>
       <a tabindex="0" class="btn btn-sm btn-warning" role="button" data-toggle="popover" data-trigger="focus" title="How is this calculated?" data-content="This element uses the fetch() API provided by JavaScript, and retrieves information as JSON data from https://reddit.com/r/teenagers.json. It automatically updates according to Reddit servers, and takes the second-from-the-top post sorted by Hot (I do this to avoid picking up announcements, but sometimes it will collect an announcement post such as Self-Post Weekend if there are two announcement posts stickied). I don't have any control over what it displays, as it is directly connected to Reddit. You can see the code on: github.com/aidswidjaja/jsonfetch where I provide an example with comments if you'd like to make one yourself!"><i>How is this calculated?</i></a>
 
@@ -165,9 +165,6 @@ $(function () {
       </div>
 
   </div> <!-- End of row 3 -->
-
-<!-- Mobile elements -->
-
 
 
 </body>
