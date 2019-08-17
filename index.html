@@ -7,12 +7,28 @@
 <title>r/teenagers</title>
 
 <!-- © Adrian Widjaja @adrianpenguin1 | GPL v3.0 -->
+<!-- <a class="btn btn-sm btn-warning" data-toggle="popover" data-trigger="focus" title="How is this calculated?" data-content="This element uses the fetch() API provided by JavaScript, and retrieves information as JSON data from https://reddit.com/r/teenagers.json. It automatically updates according to Reddit servers, and takes the top (non-announcement) post sorted by Hot. I don't have any control over what it displays, as it is directly connected to Reddit. You can see the code on: github.com/aidswidjaja/jsonfetch where I provide an example with comments if you'd like to make one yourself!"><i>How is this calculated?</i></a>-->
 
 <!-- Bootstrap -->
 <link href="css/bootstrap.css" rel="stylesheet">
 <script src="js/bootstrap.js"></script>
 <script src="js/bootstrap.min.js"></script>
+<script src="js/bootstrap.bundle.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="js/jquery-1.11.3.min.js"></script>
+
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="js/bootstrap.js"></script>
+
+<!-- Popovers -->
+<script>
+$(function () {
+  $('[data-toggle="popover"]').popover()
+})
+</script>
 
 <!-- Bootstrap override - Bootstrap CSS stylesheet has been modified as well -->
 
@@ -42,8 +58,9 @@
         </div>
       <a id="redditlink" href="www.reddit.com/r/teenagers"></a>
       <p></p>
-<a id=donttouchmeplease role="button" href="/fetchinfo" class="btn btn-sm btn-warning"><i>How is this calculated?</i></a>
       <script src="jsonfetch.js"></script>
+      <a tabindex="0" class="btn btn-sm btn-warning" role="button" data-toggle="popover" data-trigger="focus" title="How is this calculated?" data-content="This element uses the fetch() API provided by JavaScript, and retrieves information as JSON data from https://reddit.com/r/teenagers.json. It automatically updates according to Reddit servers, and takes the second-from-the-top post sorted by Hot (I do this to avoid picking up announcements, but sometimes it will collect an announcement post such as Self-Post Weekend if there are two announcement posts stickied). I don't have any control over what it displays, as it is directly connected to Reddit. You can see the code on: github.com/aidswidjaja/jsonfetch where I provide an example with comments if you'd like to make one yourself!"><i>How is this calculated?</i></a>
+
     </div>
 
 <!-- Information about r/teenagers-->
@@ -53,7 +70,7 @@
     <div style="color: white;">
       <p>r/teenagers is the biggest community forum run by teenagers for teenagers. Our subreddit is primarily for discussions and memes that an average teenager would enjoy to discuss about. We do not have any age-restriction in place but do keep in mind this is targeted for users between the ages of 13 to 19. Parents, teachers, and the like are welcomed to participate and ask any questions!</p>
 
-      <p>This is a conceptual website made by me, u/aidswidjaja. It's a milestone for myself, but I won't be maintaining it further, so feel free to use the code under GPL v3.0!</p>
+      <p>This is a unofficial conceptual website made by me, u/aidswidjaja. It's a milestone for myself, but I won't be maintaining it further, so feel free to use the code under GPL v3.0!</p>
     </div>
   </div>
 
@@ -106,7 +123,7 @@
         </div>
       <a id="tgnlink" href="https://www.reddit.com/r/teengamingnights"></a>
       <p id="tgn"></p>
-<a id=donttouchmeplease role="button" href="/fetchinfo" class="btn btn-sm btn-info"><i>How is this calculated?</i></a>
+      <a tabindex="0" class="btn btn-sm btn-info" role="button" data-toggle="popover" data-trigger="focus" title="How is this calculated?" data-content="This element uses the fetch() API provided by JavaScript, and retrieves information as JSON data from https://reddit.com/r/teenagers.json. It automatically updates according to Reddit servers, and takes the second-from-the-top post sorted by Hot (I do this to avoid picking up announcements, but sometimes it will collect an announcement post such as Self-Post Weekend if there are two announcement posts stickied). I don't have any control over what it displays, as it is directly connected to Reddit. You can see the code on: github.com/aidswidjaja/jsonfetch where I provide an example with comments if you'd like to make one yourself!"><i>How is this calculated?</i></a>
       <script src="jsonfetchtgn.js"></script>
     </div>
   </div> <!-- End of row 2 -->
@@ -130,6 +147,7 @@
     </div>
     <div class="container mr-3 rounded d-none d-lg-block">
       <!-- Modified from the example on https://getbootstrap.com/docs/4.0/components/carousel/ -->
+      <br>
       <center>
       <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner">
@@ -143,24 +161,14 @@
             <img class="d-block w-75" src="https://styles.redditmedia.com/t5_30g9p/styles/communityIcon_mo7tqqdtxfb21.png" alt="r/teengamingnights">
           </div>
         </div>
-        <!-- <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="sr-only">Next</span>
-        </a> -->
       </center>
       </div>
 
   </div> <!-- End of row 3 -->
 
+<!-- Mobile elements -->
 
-<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-<script src="js/jquery-1.11.3.min.js"></script>
 
-<!-- Include all compiled plugins (below), or include individual files as needed -->
-<script src="js/bootstrap.js"></script>
+
 </body>
 </html>
