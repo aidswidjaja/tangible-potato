@@ -22,7 +22,7 @@ fetch('https://www.reddit.com/r/teenagers/about.json')
   return response.json();
 })
 .then(function(json) {
-  var pSelect = document.querySelector('#about');
+  var pSelect = document.querySelector('#mobileabout');
   var requestURL = 'https://www.reddit.com/r/teenagers/about.json';
 
   var createSubCount = document.createElement('h4');
@@ -37,9 +37,5 @@ fetch('https://www.reddit.com/r/teenagers/about.json')
   pSelect.appendChild(createActiveCount);
 })
 .catch(function(error) {
-  var p = document.createElement('p');
-  p.appendChild(
-    document.createTextNode('uh oh: ' + error.message)
-  );
-
+  console.log("oof - "+ error);
 });

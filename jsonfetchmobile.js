@@ -22,8 +22,8 @@ fetch('https://www.reddit.com/r/teenagers.json')
   return response.json();
 })
 .then(function(json) {
-  var pSelect = document.querySelector('#redditp');
-  var aSelect = document.querySelector('#redditlink');
+  var pSelect = document.querySelector('#mobileredditp');
+  var aSelect = document.querySelector('#mobileredditlink');
   var requestURL = 'https://www.reddit.com/r/teenagers.json';
 
   var createHeader = document.createElement('h1');
@@ -53,11 +53,7 @@ fetch('https://www.reddit.com/r/teenagers.json')
 
 })
 .catch(function(error) {
-  var p = document.createElement('p');
-  p.appendChild(
-    document.createTextNode('uh oh: ' + error.message)
-  );
-  document.body.insertBefore(p, divSelect);
+  console.log("oof - "+ error);
 });
 
 
