@@ -47,10 +47,30 @@ $(function () {
 <body>
 <br>
 
+<!-- Mobile Navbar -->
+<div class="d-lg-none">
+<nav id="navbar-example2" class="navbar navbar-dark bg-dark fixed-top d-lg-none">
+
+  <ul class="nav nav-pills">
+    <li class="nav-item">
+      <a class="nav-link" href="#discord">Discord</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#reddit">Reddit</a>
+    </li>
+  </ul>
+</nav>
+<div data-spy="scroll" data-target="#navbar-example2" data-offset="0">
+
+
+
 <!-- Mobile Boi (smaller than lg = true)-->
 <!-- Live post from reddit MOBILE-->
-
-      <div class="container col-12 mr-3 d-lg-none bg-orange rounded"; style="overflow: auto;">
+<br>
+<div class="alert alert-primary d-lg-none"role="alert">
+  You're on our mobile site which is a bit different to the standard version of the r/teenagers website - for the best experience, head to a computer!
+</div>
+      <div class="container col-12 mr-3 d-lg-none bg-orange rounded" id="reddit"; style="overflow: auto;">
         <br class="d-lg-none">
           <div class="text-dark">
             <b>What's happening on r/teenagers?</b>
@@ -76,7 +96,7 @@ $(function () {
 
 <div class="container-fluid col-12 d-lg-none rounded d-flex"> <!-- Start of row 1-->
 
-<div class="container col-12 d-lg-none bg-cyan rounded", style="overflow: auto;">
+<div class="container col-12 mr-3 d-lg-none bg-cyan rounded", style="overflow: auto;">
         <br class="d-lg-none">
         <h2>r/teenagers has...</h2>
         <h4 id="mobileabout"></h4>
@@ -89,16 +109,20 @@ $(function () {
       <br class="d-lg-none">
 </div>
 <br class="d-lg-none">
-
-<!-- <div class="container col-12 d-lg-none bg-blurple rounded">
+<div class="container-fluid col-12 d-lg-none rounded d-flex"> <!-- Start of row 1-->
+<div class="container col-12 d-lg-none bg-blurple rounded" id="discord", style="overflow: auto;">
   <br class="d-lg-none">
-    <img src="https://discordapp.com/assets/192cb9459cbc0f9e73e2591b700f1857.svg" class="d-lg-none"></img>
-    <div class="container d-lg-none">
-      <div class="row d-lg-none">
-    <div class="col-sm-8 d-lg-none"><a href="https://discordapp.com/invite/teenagers" class="btn btn-lg btn-dark">Join the <b>r/teenagers</b> Discord server</a></div>
-    <div class="col-sm-4 d-lg-none"><a href="https://discordapp.com/invite/SCZpqvN" class="btn btn-lg btn-dark">Join the <b>TGN</b> Discord server</a></div>
+    <img src="https://discordapp.com/assets/192cb9459cbc0f9e73e2591b700f1857.svg"></img>
+    <br class="d-lg-none"><br class="d-lg-none">
 
-</div> -->
+  <center><a href="https://discordapp.com/invite/teenagers" class="btn btn-lg btn-light">https://discordapp.com/invite/teenagers</center></a>
+</div>
+    <center><a href="https://discordapp.com/invite/SCZpqvN" class="btn btn-lg btn-dark">Join the <b>TGN</b> Discord server</a></center>
+    <p style="color: #ffffff !important;"><center>it's super fun we promise</p></center></style>
+</div>
+</div>
+</div> <!-- spyscroller -->
+
 
 
 <!-- desktop elements -->
