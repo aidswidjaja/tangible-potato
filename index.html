@@ -67,9 +67,11 @@ $(function () {
 <!-- Mobile Boi (smaller than lg = true)-->
 <!-- Live post from reddit MOBILE-->
 <br>
+<br class="d-lg-none">
 <div class="alert alert-primary d-lg-none"role="alert">
   You're on our mobile site which is a bit different to the standard version of the r/teenagers website - for the best experience, head to a computer!
 </div>
+<div class="container-fluid col-12 d-lg-none rounded d-flex">
       <div class="container col-12 mr-3 d-lg-none bg-orange rounded" id="reddit"; style="overflow: auto;">
         <br class="d-lg-none">
           <div class="text-dark">
@@ -82,8 +84,9 @@ $(function () {
         <br class="d-lg-none">
         <p></p> <!-- Zero length to create gap between <a> and <div> -->
       </div>
+</div>
       <br class="d-lg-none">
-
+<div class="container-fluid col-12 d-lg-none rounded d-flex">
       <div class="container mr-3 col-12 bg-blue d-lg-none rounded"; style="overflow: auto;">
         <br class="d-lg-none">
         <div style="color: white;">
@@ -92,9 +95,10 @@ $(function () {
           <p>This is a <b>unofficial</b> conceptual website made by me, u/aidswidjaja. It's a milestone for myself, but I won't be maintaining it further, so feel free to use the code under GPL v3.0!</p>
         </div>
       </div>
+    </div>
       <br class="d-lg-none">
 
-<div class="container-fluid col-12 d-lg-none rounded d-flex"> <!-- Start of row 1-->
+<div class="container-fluid col-12 d-lg-none rounded d-flex">
 
 <div class="container col-12 mr-3 d-lg-none bg-cyan rounded", style="overflow: auto;">
         <br class="d-lg-none">
@@ -109,25 +113,34 @@ $(function () {
       <br class="d-lg-none">
 </div>
 <br class="d-lg-none">
-<div class="container-fluid col-12 d-lg-none rounded d-flex"> <!-- Start of row 1-->
+<div class="container-fluid col-12 d-lg-none rounded d-flex">
 <div class="container col-12 d-lg-none bg-blurple rounded" id="discord", style="overflow: auto;">
   <br class="d-lg-none">
-    <img src="https://discordapp.com/assets/192cb9459cbc0f9e73e2591b700f1857.svg"></img>
-    <br class="d-lg-none"><br class="d-lg-none">
+    <center><img src="https://discordapp.com/assets/192cb9459cbc0f9e73e2591b700f1857.svg" style="width: 75%;"></img></center>
+  <center><a href="https://discordapp.com/invite/teenagers" class="btn btn-lg btn-dark" style="border: 5px solid; border-radius: 10px; border-color: #7289DA;">Join the <b>r/teenagers</b> Discord server</a>
 
-  <center><a href="https://discordapp.com/invite/teenagers" class="btn btn-lg btn-light">https://discordapp.com/invite/teenagers</center></a>
-</div>
-    <center><a href="https://discordapp.com/invite/SCZpqvN" class="btn btn-lg btn-dark">Join the <b>TGN</b> Discord server</a></center>
+    <a href="https://discordapp.com/invite/SCZpqvN" class="btn btn-lg btn-dark" style="border: 5px solid; border-radius: 10px; border-color: #7289DA;">Join the <b>TGN</b> Discord server</a></center>
     <p style="color: #ffffff !important;"><center>it's super fun we promise</p></center></style>
+  </div>
 </div>
 </div>
+
+<div class="container col-12 d-lg-none rounded", style="overflow: auto; background-color: #2C2E35">
+    <br>
+    <center><img src="https://raw.githubusercontent.com/aidswidjaja/tangible-potato/master/resources/steamlogo.png" style="width: 80%;"></img></center>
+    <br>
+    <center><a href="https://steamcommunity.com/groups/reddit-teenagers" class="btn btn-outline-secondary btn-lg">Join the <b>TGN</b> Steam group</a><center>
+    <br>
+    <center><a href="https://steamcommunity.com/groups/reddit-teenagers#announcements" class="btn btn-outline-secondary btn-sm">View the latest announcements</a><center>
+    <br>
 </div> <!-- spyscroller -->
+</div> <!-- d-lg-none -->
 
 
 
 <!-- desktop elements -->
 
-<div class="container col-12 rounded d-flex", style="height:30vh;"> <!-- Start of row 1-->
+<div class="container col-12 rounded d-flex ", style="height:30vh;"> <!-- Start of row 1-->
 
 
 <!-- Live post from reddit-->
@@ -146,7 +159,7 @@ $(function () {
 
 <!-- Information about r/teenagers-->
 
-  <div class="container mr-3 bg-blue d-none d-lg-block rounded"; style="overflow: auto;">
+  <div class="container col-4 mr-3 d-none d-lg-block bg-blue rounded"; style="overflow: auto;">
     <br>
     <div style="color: white;">
       <p>r/teenagers is the biggest community forum run by teenagers for teenagers. Our subreddit is primarily for discussions and memes that an average teenager would enjoy to discuss about. We do not have any age-restriction in place but do keep in mind this is targeted for users between the ages of 13 to 19. Parents, teachers, and the like are welcomed to participate and ask any questions!</p>
@@ -157,7 +170,7 @@ $(function () {
 
 <!-- Member count -->
 
-  <div class="container col-3 d-none d-lg-block bg-cyan rounded"; style="overflow:auto;">
+  <div class="container col-3 mr-3 d-none d-lg-block bg-cyan rounded"; style="overflow: auto;">
     <br>
     <h2>r/teenagers has...</h2>
     <h4 id="about"></h4>
@@ -205,6 +218,7 @@ $(function () {
       <a id="tgnlink" href="https://www.reddit.com/r/teengamingnights"></a>
       <p id="tgn"></p>
       <a tabindex="0" class="btn btn-sm btn-info" role="button" data-toggle="popover" data-trigger="focus" title="How is this calculated?" data-content="This element uses the fetch() API provided by JavaScript, and retrieves information as JSON data from https://reddit.com/r/teenagers.json. It automatically updates according to Reddit servers, and takes the second-from-the-top post sorted by Hot (I do this to avoid picking up announcements, but sometimes it will collect an announcement post such as Self-Post Weekend if there are two announcement posts stickied). I don't have any control over what it displays, as it is directly connected to Reddit. You can see the code on: github.com/aidswidjaja/jsonfetch where I provide an example with comments if you'd like to make one yourself!"><i>How is this calculated?</i></a>
+      <p></p>
       <script src="jsonfetchtgn.js"></script>
     </div>
   </div> <!-- End of row 2 -->
