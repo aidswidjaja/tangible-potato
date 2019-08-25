@@ -14,7 +14,7 @@
 
 // Unfortunately variables had to be moved inside a function as scope issues conflicted with another script
 
-fetch('https://www.reddit.com/r/teenagers.json')
+fetch('https://www.reddit.com/r/teengamingnights.json')
 .then(function(response) {
   if (!response.ok) {
     throw new Error("uh oh: HTTP error, status = " + response.status); // error checking
@@ -22,9 +22,9 @@ fetch('https://www.reddit.com/r/teenagers.json')
   return response.json();
 })
 .then(function(json) {
-  var pSelect = document.querySelector('#mobileredditp');
-  var aSelect = document.querySelector('#mobileredditlink');
-  var requestURL = 'https://www.reddit.com/r/teenagers.json';
+  var pSelect = document.querySelector('#mobiletgn');
+  var aSelect = document.querySelector('#mobiletgnlink');
+  var requestURL = 'https://www.reddit.com/r/teengamingnights.json';
 
   var createHeader = document.createElement('h1');
   var createPara = document.createElement('p');
@@ -34,26 +34,28 @@ fetch('https://www.reddit.com/r/teenagers.json')
   var createOrange = document.createElement('p'); // unused
 
   // get ready!
-  var grassJellyDrink = json.data && json.data.children && json.data.children["2"] && json.data.children["2"].data && json.data.children["2"].data.permalink;
-  document.getElementById("redditlink").href = "https://reddit.com" + grassJellyDrink; // Permalink
-  var contents = json.data && json.data.children && json.data.children["2"] && json.data.children["2"].data && json.data.children["2"].data.title;
-  createHeader.innerHTML = contents; // Title
-  var username = json.data && json.data.children && json.data.children["2"] && json.data.children["2"].data && json.data.children["2"].data.author;
-  createPara.innerHTML = "by " + username; // Author
-  var potato = json.data && json.data.children && json.data.children["2"] && json.data.children["2"].data && json.data.children["2"].data.score;
-  createBold.innerHTML = potato + " points"; // Score
+  var contents = json.data && json.data.children && json.data.children["1"] && json.data.children["1"].data && json.data.children["1"].data.title;
+  createHeader.innerHTML = contents;
+  var username = json.data && json.data.children && json.data.children["1"] && json.data.children["1"].data && json.data.children["1"].data.author;
+  createPara.innerHTML = "by " + username;
+  var potato = json.data && json.data.children && json.data.children["1"] && json.data.children["1"].data && json.data.children["1"].data.score;
+  createBold.innerHTML = potato + " points";
   var linebreak = document.createElement('br');
-
+  var grassJellyDrink = json.data && json.data.children && json.data.children["1"] && json.data.children["1"].data && json.data.children["1"].data.permalink;
+  document.getElementById("redditlink").href = "https://reddit.com" + grassJellyDrink;
 
   aSelect.appendChild(createHeader);
   pSelect.appendChild(createPara);
   pSelect.appendChild(createBold);
   pSelect.appendChild(linebreak);
   pSelect.appendChild(createBolder);
-
 })
 .catch(function(error) {
-  console.log("oof - "+ error);
+  var p = document.createElement('p');
+  p.appendChild(
+    document.createTextNode('uh oh: ' + error.message)
+  );
+  document.body.insertBefore(p, divSelect);
 });
 
 

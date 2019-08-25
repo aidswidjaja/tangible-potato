@@ -34,13 +34,13 @@ fetch('https://www.reddit.com/r/teenagers.json')
   var createOrange = document.createElement('p'); // unused
 
   // get ready!
-  var grassJellyDrink = json.data && json.data.children && json.data.children["1"] && json.data.children["1"].data && json.data.children["1"].data.permalink;
+  var grassJellyDrink = json.data && json.data.children && json.data.children["2"] && json.data.children["2"].data && json.data.children["2"].data.permalink;
   document.getElementById("redditlink").href = "https://reddit.com" + grassJellyDrink; // Permalink
-  var contents = json.data && json.data.children && json.data.children["1"] && json.data.children["1"].data && json.data.children["1"].data.title;
+  var contents = json.data && json.data.children && json.data.children["2"] && json.data.children["2"].data && json.data.children["2"].data.title;
   createHeader.innerHTML = contents; // Title
-  var username = json.data && json.data.children && json.data.children["1"] && json.data.children["1"].data && json.data.children["1"].data.author;
+  var username = json.data && json.data.children && json.data.children["2"] && json.data.children["2"].data && json.data.children["2"].data.author;
   createPara.innerHTML = "by " + username; // Author
-  var potato = json.data && json.data.children && json.data.children["1"] && json.data.children["1"].data && json.data.children["1"].data.score;
+  var potato = json.data && json.data.children && json.data.children["2"] && json.data.children["2"].data && json.data.children["2"].data.score;
   createBold.innerHTML = potato + " points"; // Score
   var linebreak = document.createElement('br');
 
