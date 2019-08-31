@@ -62,9 +62,115 @@ body { background: #343A40 !important;}
 html { color: #f8f9fa !important;} /* Screw you Chrome */
 </style>
 <head>
+<!-- Breadcrumb taken from the example on https://getbootstrap.com/docs/4.0/components/breadcrumb/ -->
+  <nav aria-label="breadcrumb">
+  <ol class="breadcrumb bg-dark">
+    <li class="breadcrumb-item"><a href="/index.html" style="color: #007bff;">Home</a></li>
+    <li class="breadcrumb-item active" aria-current="page">About</li>
+  </ol>
+</nav>
+
+<!-- Dismissable alert taken from https://getbootstrap.com/docs/4.0/components/alerts/-->
+
+<div class="alert alert-success alert-dismissible fade show" role="alert">
+  <strong>This is not an official r/teenagers website. </strong> It is only a conceptual design mockup made by u/aidswidjaja, and information may not be accurate or it may be broken.
+  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+
+<div class="alert alert-warning alert-dismissible fade show d-lg-none" role="alert">
+  You're on our mobile site which is a bit different to the standard version of the r/teenagers website - for the best experience, head to a computer!
+  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+
 
 </head>
 
 <body>
 
-</body>
+
+
+  <div class="jumbotron bg-dark">
+    <h1 class="display-4" style="font-family: 'Futura', sans-serif; color: #fff;">for teenagers, by teenagers...</h1>
+    <p class="lead" style="color: #fff;">We're making something great here... building a community of teenagers around the world using the power of the Internet.</p>
+    <hr class="my-4">
+    <p style="color: #fff;">r/teenagers is the biggest community forum run by teenagers for teenagers. Our subreddit is primarily for discussions and memes that an average teenager would enjoy to discuss about. We do not have any age-restriction in place but do keep in mind this is targeted for users between the ages of 13 to 19. Parents, teachers, and the like are welcomed to participate and ask any questions!
+      <br><br>
+      Not many things are out of place in this community; almost anything that crosses our teenage minds will be allowed. However, there must be a balance between freedom and, well, not freedom! The moderating team reserves the right to act on a case by case basis fit in good faith for the community. Visit the rules at <a style="color: #fff" href="https://www.reddit.com/r/teenagers/wiki/rules">reddit.com/r/teenagers/wiki/rules</a>.
+      <br><br>
+      The moderating team is comprised of 3 teams. The teams are as follows: Discord, Reddit, and TeenGamingNights. Each moderating team have their respective powers for their respective communities. For the purpose of the Discord, your main interaction and support channel will be directly with the Discord moderating team. Please do not contact Discord moderators for assistance with the subreddit and vice-versa. The moderating teams work in unity under /r/teenagers. The Advisory Role Committee is not part of the moderating staff team. ARC contains a fixed amount of members on a 60-day period rotation who seek change and draft changes to be made within our community. Instead of moderators strictly proposing new ideas, changes, and events, these members can do so in an expedited process with constant feedback and communications from both the branch volunteer members and their respective ARC members. This allows more opinions from not just moderators but regular community members without the need to be a moderator nor have the viewpoint of one. The selection of ARC members must be made with history, participation, and background in mind.
+    </p>
+    <h5 style="color: #fff;">Frequently Asked Questions</h3>
+      <br>
+      <p style="color: #fff">
+        <b>Are the mods actually teens, and if yes, do they retire when they're no longer a teenager?</b>
+        <br>
+        Despite our ageism rule, the moderators are picked with age in mind. Moderators are accepted if they are teenagers and fit the rest of our extensive list. If a moderator is no longer a teenager, they typically retire shortly after. They are not forced out of their position. Once a moderator ages out of their teenaged years, they typically retire shortly after as they no longer relate to the community. So long, oldies!
+        <br><br>
+        <b>Are you guys currently in need of more moderators?</b>
+        <br>
+        Thank you for your interest in applying as a moderator! Unfortunately, we only hire moderators during specific application periods, our most common being annually sometime near Spring. However, we may have extraneous application periods, so keep an eye out for those announcements! As always, we only hire moderators that have been involved within our community.
+        <br><br>
+        <b>Do you guys have a gaming channel or community?</b>
+        <br>
+        Yes, we do! It is called TeenGamingNights, or TGN for short. You can visit the Discord server by using the following invite code: SCZpqvN or by clicking the button below.
+        <br><br>
+        <div class="btn-group-vertical">
+          <a class="btn btn-warning" href="https://www.reddit.com/r/teengamingnights">You can visit the subreddit by clicking here</a>
+          <br><br>
+          <a class="btn bg-blurple" href="https://discord.gg/SCZpqvN">Visit our Discord by clicking here.</a>
+          <br><br>
+          <a class="btn bg-steam" style="color: #fff;" href="https://steamcommunity.com/groups/reddit-teenagers">Visit our Steam group and join!</a>
+        </div>
+        <p style="color: #fff">
+        <br>
+        <b>What is the invite code for this server?</b>
+        <br>
+        The invite code is simply teenagers, you can also share the link accessed through the button below.
+        <br><br>
+        <a class="btn bg-blurple" href="https://discordapp.com/invite/teenagers">Invite your friends to the Discord server by sharing this link.</a>
+        <br><br>
+        <b>How can I suggest changes anonymously to the moderating team?</b>
+        <br>
+        You can file a suggestion form by clicking on the button below. We use Google forms. All serious suggestions will be thoroughly reviewed and considered by the Discord moderating team, so please voice your ideas or concerns about the Discord server!
+        <br><br>
+        <a class="btn btn-info" href="https://goo.gl/forms/czF6acUsw5VsFaJC2">Link to our suggestion form.</a>
+        <br><br>
+        <b>What happens if I get banned?</b>
+        <br>
+        You can file a ban appeal form by clicking on the link above. We use Google forms.
+        <br><br>
+        <a class="btn btn-danger" href="https://goo.gl/forms/OPExZo7JDt0Xc5TF2">Link to our ban appeal form.</a>
+        <br><br>
+        <b>What happens if I get assigned the Restricted role?</b>
+        <br>
+        You can file a role appeal form by clicking on the link below. We use Google Forms.
+        <br><br>
+        <a class="btn btn-danger" href="https://goo.gl/forms/HrtV9FiySFnyFFlL2">Link to our Restricted role appeal form.</a>
+        <br><br>
+        <b>I'd like to appeal a moderator's decision, how can I do that?</b>
+        <br>
+        If for Discord, please contact the Discord Team Leader: Rodentman87
+        #8787 (interim).  If you disagree with the Discord Team Leader's decision, you can contact the Community Director: caro#7961.  If for Reddit, please contact the Reddit moderating team by messaging on Reddit to /r/teenagers or by clicking the button below.  If for TGN, please contact the TGN moderating team by messaging on Reddit to /r/teengamingnights or by clicking the button below.      <br><br>
+
+        <a class="btn btn-danger" href="https://www.reddit.com/message/compose?to=%2Fr%2Fteenagers">Link to send a message to the Reddit moderating team.</a>
+        <br><br>
+        <a class="btn btn-danger" href="https://www.reddit.com/message/compose?to=%2Fr%2Fteengamingnights">Link to send a message to the TGN moderating team.</a>
+        <br><br>
+        <b>Is this the official r/teenagers website?</b>
+        <br><br>
+        Okay... let's talk about that. <br><br>
+
+        This is a totally unofficial website that is <b>not commissioned, endorsed, or affiliated with the r/teenagers administration</b>. It is a concept and mockup made by me, that's licenced under the GPL v3.0 in Australia. Most of the content here is &copy r/teenagers, and I hope to respect that copyright, which means that if there's something you'd like taken down, please contact u/airswidjaja on Reddit or contact aidswidjaja#2805 through Discord. Thanks!
+        <br><br>
+      </p>
+      <p class="lead">
+        <br>
+        <a class="btn btn-primary btn-lg" href="https://reddit.com/r/teenagers" role="button">Go to r/teenagers</a>
+      </p>
+    </div>
+
+  </body>
