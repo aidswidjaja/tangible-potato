@@ -57,6 +57,18 @@
 .bg-blurple {background-color: #7289DA !important;}
 .bg-steam {background-color: #2C2E35 !important;}
 
+html {
+  overflow: scroll;
+}
+::-webkit-scrollbar {
+    width: 0px;
+    background: transparent; /* make scrollbar transparent */
+}
+
+.invisible-scrollbar {
+  display: none; /* make scrollbar transparent */
+}
+
 *,
 *::before,
 *::after {
