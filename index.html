@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
   <title>r/teenagers</title>
 
   <!-- © Adrian Widjaja @adrianpenguin1 | GPL v3.0 -->
@@ -71,7 +72,7 @@ html { color: #f8f9fa !important;} /* Screw you Chrome */
 </head>
 <body>
   <br>
-<!-- Dismissable alert taken from https://getbootstrap.com/docs/4.0/components/alerts/-->
+  <!-- Dismissable alert taken from https://getbootstrap.com/docs/4.0/components/alerts/-->
 
   <div class="alert alert-success alert-dismissible fade show" role="alert" style="z-index: 5000; position: relative;">
     <strong>This is not an official r/teenagers website. </strong> It is only a conceptual design mockup made by u/aidswidjaja, and information may not be accurate or it may be broken. For more information, head to <a href="/tangible-potato/about.html">About this site</a>.
@@ -124,274 +125,274 @@ html { color: #f8f9fa !important;} /* Screw you Chrome */
   <!-- Mobile (d-lg-none (<lg))-->
 
 
+  <br class="d-lg-none">
+
+  <div class="container-fluid col-12 d-lg-none rounded d-flex">
+    <div class="container col-12 mr-3 d-lg-none bg-orange rounded" id="reddit"; style="overflow: auto;">
+      <br class="d-lg-none">
+      <div class="text-dark">
+        <b>What's happening on r/teenagers?</b>
+      </div>
+      <a id="mobileredditlink" href="https://www.reddit.com/r/teenagers"></a>
+      <p id="mobileredditp"></p>
+      <script src="jsresources/jsonfetchmobile.js"></script>
+      <a tabindex="0" class="btn btn-sm btn-warning" role="button" data-toggle="popover" data-trigger="focus" title="How is this calculated?" data-content="This element uses the fetch() API provided by JavaScript, and retrieves information as JSON data from https://reddit.com/r/teenagers.json. It automatically updates according to Reddit servers, and takes the third-from-the-top post sorted by Hot (I do this to avoid picking up announcements, but sometimes it will collect an announcement post such as Self-Post Weekend if there are three announcement posts stickied). I don't have any control over what it displays, as it is directly connected to Reddit. You can see the code on: github.com/aidswidjaja/jsonfetch where I provide an example with comments if you'd like to make one yourself!"><i>How is this calculated?</i></a>
+      <br class="d-lg-none">
+      <p></p> <!-- Zero length to create gap between <a> and <div> -->
+      </div>
+    </div>
+
+    <br class="d-lg-none">
+    <div class="container-fluid col-12 d-lg-none rounded d-flex" id="aboutus">
+      <div class="container mr-3 col-12 bg-blue d-lg-none rounded"; style="overflow: auto;">
+        <br class="d-lg-none">
+        <div style="color: white;">
+          <p>r/teenagers is the biggest community forum run by teenagers for teenagers. Our subreddit is primarily for discussions and memes that an average teenager would enjoy to discuss about. We do not have any age-restriction in place but do keep in mind this is targeted for users between the ages of 13 to 19. Parents, teachers, and the like are welcomed to participate and ask any questions!</p>
+          <p>This is a <b>unofficial</b> conceptual website made by me, u/aidswidjaja. It's a milestone for myself, but I won't be maintaining it further, so feel free to use the code under GPL v3.0!</p>
+        </div>
+      </div>
+    </div>
     <br class="d-lg-none">
 
     <div class="container-fluid col-12 d-lg-none rounded d-flex">
-      <div class="container col-12 mr-3 d-lg-none bg-orange rounded" id="reddit"; style="overflow: auto;">
+
+      <div class="container col-12 mr-3 d-lg-none bg-cyan rounded" id="status" style="overflow: auto;">
         <br class="d-lg-none">
-        <div class="text-dark">
-          <b>What's happening on r/teenagers?</b>
-        </div>
-        <a id="mobileredditlink" href="https://www.reddit.com/r/teenagers"></a>
-        <p id="mobileredditp"></p>
-        <script src="jsresources/jsonfetchmobile.js"></script>
-        <a tabindex="0" class="btn btn-sm btn-warning" role="button" data-toggle="popover" data-trigger="focus" title="How is this calculated?" data-content="This element uses the fetch() API provided by JavaScript, and retrieves information as JSON data from https://reddit.com/r/teenagers.json. It automatically updates according to Reddit servers, and takes the third-from-the-top post sorted by Hot (I do this to avoid picking up announcements, but sometimes it will collect an announcement post such as Self-Post Weekend if there are three announcement posts stickied). I don't have any control over what it displays, as it is directly connected to Reddit. You can see the code on: github.com/aidswidjaja/jsonfetch where I provide an example with comments if you'd like to make one yourself!"><i>How is this calculated?</i></a>
+        <h2>r/teenagers has...</h2>
+        <h4 id="mobileabout"></h4>
         <br class="d-lg-none">
-        <p></p> <!-- Zero length to create gap between <a> and <div> -->
+        <a href="https://www.reddit.com/r/teenagers/" role="button" class="btn btn-lg btn-light">Visit r/teenagers</a>
+        <script src="jsresources/jsonfetchaboutmobile.js"></script>
+        <br class="d-lg-none">
+        <p></p><!-- Zero length to create gap between <a> and <div> -->
         </div>
+        <br class="d-lg-none">
       </div>
 
       <br class="d-lg-none">
-      <div class="container-fluid col-12 d-lg-none rounded d-flex" id="aboutus">
-        <div class="container mr-3 col-12 bg-blue d-lg-none rounded"; style="overflow: auto;">
-          <br class="d-lg-none">
-          <div style="color: white;">
-            <p>r/teenagers is the biggest community forum run by teenagers for teenagers. Our subreddit is primarily for discussions and memes that an average teenager would enjoy to discuss about. We do not have any age-restriction in place but do keep in mind this is targeted for users between the ages of 13 to 19. Parents, teachers, and the like are welcomed to participate and ask any questions!</p>
-            <p>This is a <b>unofficial</b> conceptual website made by me, u/aidswidjaja. It's a milestone for myself, but I won't be maintaining it further, so feel free to use the code under GPL v3.0!</p>
-          </div>
-        </div>
-      </div>
-      <br class="d-lg-none">
 
-      <div class="container-fluid col-12 d-lg-none rounded d-flex">
-
-        <div class="container col-12 mr-3 d-lg-none bg-cyan rounded" id="status" style="overflow: auto;">
-          <br class="d-lg-none">
-          <h2>r/teenagers has...</h2>
-          <h4 id="mobileabout"></h4>
-          <br class="d-lg-none">
-          <a href="https://www.reddit.com/r/teenagers/" role="button" class="btn btn-lg btn-light">Visit r/teenagers</a>
-          <script src="jsresources/jsonfetchaboutmobile.js"></script>
-          <br class="d-lg-none">
-          <p></p><!-- Zero length to create gap between <a> and <div> -->
-          </div>
-          <br class="d-lg-none">
-        </div>
-
-        <br class="d-lg-none">
-
-        <div class="container-fluid col-12 d-lg-none rounded d-flex" id="steam">
-          <div class="container col-12 mr-3 d-lg-none rounded", style="overflow: auto; background-color: #2C2E35">
+      <div class="container-fluid col-12 d-lg-none rounded d-flex" id="steam">
+        <div class="container col-12 mr-3 d-lg-none rounded", style="overflow: auto; background-color: #2C2E35">
+          <br>
+          <center><img src="https://raw.githubusercontent.com/aidswidjaja/tangible-potato/master/resources/steamlogo.png" style="width: 80%;"></img></center>
+          <br>
+          <center><a href="https://steamcommunity.com/groups/reddit-teenagers" class="btn btn-block btn-outline-secondary btn-lg">Join the <b>TGN</b> Steam group</a><center>
             <br>
-            <center><img src="https://raw.githubusercontent.com/aidswidjaja/tangible-potato/master/resources/steamlogo.png" style="width: 80%;"></img></center>
-            <br>
-            <center><a href="https://steamcommunity.com/groups/reddit-teenagers" class="btn btn-block btn-outline-secondary btn-lg">Join the <b>TGN</b> Steam group</a><center>
+            <center><a href="https://steamcommunity.com/groups/reddit-teenagers#announcements" class="btn btn-block btn-outline-secondary btn-sm">View the latest announcements</a><center>
               <br>
-              <center><a href="https://steamcommunity.com/groups/reddit-teenagers#announcements" class="btn btn-block btn-outline-secondary btn-sm">View the latest announcements</a><center>
-                <br>
+            </div>
+          </div>
+
+          <br class="d-lg-none">
+          <div class="container-fluid col-12 d-lg-none rounded d-flex" id="discord">
+            <div class="container col-12 d-lg-none bg-blurple rounded" id="discord", style="overflow: auto;">
+              <br class="d-lg-none">
+              <center><img src="https://discordapp.com/assets/192cb9459cbc0f9e73e2591b700f1857.svg" style="width: 75%;"></img></center>
+              <center><a href="https://discordapp.com/invite/teenagers" class="btn btn-lg btn-dark" style="border: 5px solid; border-radius: 10px; border-color: #7289DA;">Join the <b>r/teenagers</b> Discord server</a>
+
+                <a href="https://discordapp.com/invite/SCZpqvN" class="btn btn-lg btn-dark" style="border: 5px solid; border-radius: 10px; border-color: #7289DA;">Join the <b>TGN</b> Discord server</a></center>
+                <p style="color: #ffffff !important;"><center>it's super fun we promise</p></center></style>
               </div>
             </div>
 
             <br class="d-lg-none">
-            <div class="container-fluid col-12 d-lg-none rounded d-flex" id="discord">
-              <div class="container col-12 d-lg-none bg-blurple rounded" id="discord", style="overflow: auto;">
-                <br class="d-lg-none">
-                <center><img src="https://discordapp.com/assets/192cb9459cbc0f9e73e2591b700f1857.svg" style="width: 75%;"></img></center>
-                <center><a href="https://discordapp.com/invite/teenagers" class="btn btn-lg btn-dark" style="border: 5px solid; border-radius: 10px; border-color: #7289DA;">Join the <b>r/teenagers</b> Discord server</a>
-
-                  <a href="https://discordapp.com/invite/SCZpqvN" class="btn btn-lg btn-dark" style="border: 5px solid; border-radius: 10px; border-color: #7289DA;">Join the <b>TGN</b> Discord server</a></center>
-                  <p style="color: #ffffff !important;"><center>it's super fun we promise</p></center></style>
+            <div class="container-fluid col-12 d-lg-none rounded d-flex" id="tgnreddit">
+              <div class="container col-12 d-lg-none bg-yellow rounded", style="overflow: auto;">
+                <br>
+                <div class="text-dark">
+                  <b>What's happening on r/teengamingnights?</b>
                 </div>
+                <a id="mobiletgnlink" href="https://www.reddit.com/r/teengamingnights"></a>
+                <p id="mobiletgn"></p>
+                <a tabindex="0" class="btn btn-sm btn-info" role="button" data-toggle="popover" data-trigger="focus" title="How is this calculated?" data-content="This element uses the fetch() API provided by JavaScript, and retrieves information as JSON data from https://reddit.com/r/teenagers.json. It automatically updates according to Reddit servers, and takes the second-from-the-top post sorted by Hot (I do this to avoid picking up announcements, but sometimes it will collect an announcement post such as Self-Post Weekend if there are two announcement posts stickied). I don't have any control over what it displays, as it is directly connected to Reddit. You can see the code on: github.com/aidswidjaja/jsonfetch where I provide an example with comments if you'd like to make one yourself!"><i>How is this calculated?</i></a>
+                <p></p>
+                <script src="jsresources/jsonfetchtgnmobile.js"></script>
               </div>
+            </div>
+            <br class="d-lg-none">
+            <div class="container-fluid col-12 d-lg-none rounded d-flex" id="minecraft">
+              <div class="container col-12 d-lg-none bg-teal rounded", style="overflow: auto;"> <!-- Minecraft! -->
+                <br>
+                <center>
+                  <h2>Join our Minecraft server!</h2>
+                  <p>Our Minecraft server is a custom generated survival world with PvP enabled. The server is set to hard difficulty, as a result, mobs can pack quite a punch! The survival world is meant to encompass vanilla gameplay and early Minecraft gameplay environment. Our server runs using very minimal gameplay changes to its core, so towns and settlements are done through player interaction and behavior only, we limit our usage on plugins. To enhance quality of life and for additional security, players can protect their items like chests, doors, and furnaces. Aside from this, the gameplay is entirely vanilla.</p>
+                  <a href="https://osmc.teengamingnights.net/" class="btn btn-outline-dark btn-large"><b>osmc.teengamingnights.net</b></a>
+                  <br>
+                  <p></p>
+                </center>
+              </div>
+            </div>
+            <br class="d-lg-none">
 
-              <br class="d-lg-none">
-              <div class="container-fluid col-12 d-lg-none rounded d-flex" id="tgnreddit">
-                <div class="container col-12 d-lg-none bg-yellow rounded", style="overflow: auto;">
+            <div class="container-fluid col-12 d-lg-none rounded d-flex" id="aboutthissite">
+              <div class="container col-12 bg-purple d-lg-none rounded", style="overflow: auto;"> <!-- things you should know -->
+                <br>
+                <a href="/tangible-potato/about.html" class="btn btn-block btn-lg btn-danger"><h1>About this site</h1></a>
+                <a href="https://www.reddit.com/user/airswidjaja" class="btn btn-block btn-lg btn-danger"><h2>@aidswidjaja</h2></a>
+                <br>
+                <p style="font-size: 10px; color: #fff;"><b>© Adrian Widjaja 2019</b> | GPL v3.0 | In Australia, copyright law is set out in the Copyright Act 1968 (Cth). This is federal legislation, and applies throughout Australia. The Commonwealth Attorney-General administers Australian copyright law.</p>
+              </div>
+            </div>
+            <br class="d-lg-none">
+            <center>
+              <div class="container d-lg-none rounded d-block">
+                <center>
+                  <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner d-block">
+                      <div class="carousel-item active">
+                        <img class="d-block w-50" src="https://raw.githubusercontent.com/aidswidjaja/tangible-potato/master/resources/rTeenagers.png" alt="r/teenagers">
+                      </div>
+                      <div class="carousel-item">
+                        <img class="d-block" src="https://styles.redditmedia.com/t5_2rjli/styles/communityIcon_hvd4fm0g4pd31.png" alt="r/teenagers">
+                      </div>
+                      <div class="carousel-item">
+                        <img class="d-block" src="https://styles.redditmedia.com/t5_30g9p/styles/communityIcon_mo7tqqdtxfb21.png" alt="r/teengamingnights">
+                      </center>
+                    </div>
+                  </div>
+                </center>
+              </div>
+            </div>
+          </div>
+
+
+
+          <!-- desktop elements -->
+
+          <div class="container col-12 rounded d-none d-lg-flex", style="height:30vh;"> <!-- Start of row 1-->
+
+
+
+            <!-- Live post from reddit-->
+
+            <div class="container mr-3 d-none d-lg-block bg-orange rounded"; style="overflow: auto;">
+              <br>
+              <div class="text-dark">
+                <b>What's happening on r/teenagers?</b>
+              </div>
+              <a id="redditlink" href="www.reddit.com/r/teenagers"></a>
+              <p id="redditp"></p>
+              <script src="jsresources/jsonfetch.js"></script>
+              <a tabindex="0" class="btn btn-sm btn-warning" role="button" data-toggle="popover" data-trigger="focus" title="How is this calculated?" data-content="This element uses the fetch() API provided by JavaScript, and retrieves information as JSON data from https://reddit.com/r/teenagers.json. It automatically updates according to Reddit servers, and takes the third-from-the-top post sorted by Hot (I do this to avoid picking up announcements, but sometimes it will collect an announcement post such as Self-Post Weekend if there are three announcement posts stickied). I don't have any control over what it displays, as it is directly connected to Reddit. You can see the code on: github.com/aidswidjaja/jsonfetch where I provide an example with comments if you'd like to make one yourself!"><i>How is this calculated?</i></a>
+
+            </div>
+
+            <!-- Information about r/teenagers-->
+
+            <div class="container col-4 mr-3 d-none d-lg-block bg-blue rounded"; style="overflow: auto;">
+              <br>
+              <div style="color: white;">
+                <p>r/teenagers is the biggest community forum run by teenagers for teenagers. Our subreddit is primarily for discussions and memes that an average teenager would enjoy to discuss about. We do not have any age-restriction in place but do keep in mind this is targeted for users between the ages of 13 to 19. Parents, teachers, and the like are welcomed to participate and ask any questions!</p>
+
+                <p>This is a <b>unofficial</b> conceptual website made by me, u/aidswidjaja. It's a milestone for myself, but I won't be maintaining it further, so feel free to use the code under GPL v3.0!</p>
+              </div>
+            </div>
+
+            <!-- Member count -->
+
+            <div class="container col-3 mr-3 d-none d-lg-block bg-cyan rounded"; style="overflow: auto;">
+              <br>
+              <h2>r/teenagers has...</h2>
+              <h4 id="about"></h4>
+              <br>
+              <a href="https://www.reddit.com/r/teenagers/" role="button" class="btn btn-lg btn-light">Visit r/teenagers</a>
+              <script src="jsresources/jsonfetchabout.js"></script>
+            </div>
+
+          </div> <!-- End of Row 1-->
+
+
+          <br> <!-- Start of Row 2 -->
+
+          <div class="container col-12 rounded d-none d-lg-flex", style="height:30vh;">
+
+            <!-- Mobile elements -->
+
+
+            <!-- Discord invite -->
+            <div class="container col-2 mr-3 d-none d-lg-block bg-blurple rounded", style="overflow: auto;">
+              <br>
+              <img src="https://discordapp.com/assets/192cb9459cbc0f9e73e2591b700f1857.svg"></img>
+              <br><br>
+              <a href="https://discordapp.com/invite/teenagers" class="btn btn-lg btn-dark">Join the <b>r/teenagers</b> Discord server</a>
+              <p style="color: #ffffff !important;"><center>it's super fun we promise</p></center></style>
+            </div>
+            <!-- Discord invite for TGN-->
+            <div class="container col-2 mr-3 d-none d-lg-block bg-blurple rounded", style="overflow: auto;">
+              <br>
+              <img src="https://discordapp.com/assets/192cb9459cbc0f9e73e2591b700f1857.svg"></img>
+              <br><br>
+              <a href="https://discordapp.com/invite/SCZpqvN" class="btn btn-lg btn-dark">Join the <b>TGN</b> Discord server</a>
+              <p style="color: #ffffff !important;"><center>we have minecraft</p></center></style>
+            </div>
+            <!-- Steam group invite -->
+            <div class="container col-3 d-none d-lg-block mr-3 rounded", style="overflow: auto; background-color: #2C2E35">
+              <br>
+              <center><img src="https://raw.githubusercontent.com/aidswidjaja/tangible-potato/master/resources/steamlogo.png" style="width: 80%;"></img></center>
+              <br>
+              <center><a href="https://steamcommunity.com/groups/reddit-teenagers" class="btn btn-outline-secondary btn-lg">Join the <b>TGN</b> Steam group</a><center>
+                <br>
+                <center><a href="https://steamcommunity.com/groups/reddit-teenagers#announcements" class="btn btn-outline-secondary btn-sm">View the latest announcements</a><center>
+                </div>
+                <!-- Teen Gaming Nights -->
+                <div class="container mr-3 d-none d-lg-block bg-yellow rounded", style="overflow: auto;">
                   <br>
                   <div class="text-dark">
                     <b>What's happening on r/teengamingnights?</b>
                   </div>
-                  <a id="mobiletgnlink" href="https://www.reddit.com/r/teengamingnights"></a>
-                  <p id="mobiletgn"></p>
+                  <a id="tgnlink" href="https://www.reddit.com/r/teengamingnights"></a>
+                  <p id="tgn"></p>
                   <a tabindex="0" class="btn btn-sm btn-info" role="button" data-toggle="popover" data-trigger="focus" title="How is this calculated?" data-content="This element uses the fetch() API provided by JavaScript, and retrieves information as JSON data from https://reddit.com/r/teenagers.json. It automatically updates according to Reddit servers, and takes the second-from-the-top post sorted by Hot (I do this to avoid picking up announcements, but sometimes it will collect an announcement post such as Self-Post Weekend if there are two announcement posts stickied). I don't have any control over what it displays, as it is directly connected to Reddit. You can see the code on: github.com/aidswidjaja/jsonfetch where I provide an example with comments if you'd like to make one yourself!"><i>How is this calculated?</i></a>
                   <p></p>
-                  <script src="jsresources/jsonfetchtgnmobile.js"></script>
+                  <script src="jsresources/jsonfetchtgn.js"></script>
                 </div>
-              </div>
-              <br class="d-lg-none">
-              <div class="container-fluid col-12 d-lg-none rounded d-flex" id="minecraft">
-                <div class="container col-12 d-lg-none bg-teal rounded", style="overflow: auto;"> <!-- Minecraft! -->
+              </div> <!-- End of row 2 -->
+
+              <br>
+              <div class="container col-12 rounded d-none d-lg-flex", style="height:30vh;">  <!-- Start of row 3 -->
+
+                <!-- Mobile elements -->
+
+                <div class="container mr-3 col-6 d-none d-lg-block bg-teal rounded", style="overflow: auto;"> <!-- Minecraft! -->
                   <br>
                   <center>
                     <h2>Join our Minecraft server!</h2>
                     <p>Our Minecraft server is a custom generated survival world with PvP enabled. The server is set to hard difficulty, as a result, mobs can pack quite a punch! The survival world is meant to encompass vanilla gameplay and early Minecraft gameplay environment. Our server runs using very minimal gameplay changes to its core, so towns and settlements are done through player interaction and behavior only, we limit our usage on plugins. To enhance quality of life and for additional security, players can protect their items like chests, doors, and furnaces. Aside from this, the gameplay is entirely vanilla.</p>
                     <a href="https://osmc.teengamingnights.net/" class="btn btn-outline-dark btn-large"><b>osmc.teengamingnights.net</b></a>
-                    <br>
-                    <p></p>
                   </center>
                 </div>
-              </div>
-              <br class="d-lg-none">
-
-              <div class="container-fluid col-12 d-lg-none rounded d-flex" id="aboutthissite">
-                <div class="container col-12 bg-purple d-lg-none rounded", style="overflow: auto;"> <!-- things you should know -->
+                <div class="container mr-3 col-3 bg-purple d-none d-lg-block rounded", style="overflow: auto;"> <!-- things you should know -->
                   <br>
                   <a href="/tangible-potato/about.html" class="btn btn-block btn-lg btn-danger"><h1>About this site</h1></a>
                   <a href="https://www.reddit.com/user/airswidjaja" class="btn btn-block btn-lg btn-danger"><h2>@aidswidjaja</h2></a>
                   <br>
-                  <p style="font-size: 10px; color: #fff;"><b>© Adrian Widjaja 2019</b> | GPL v3.0 | In Australia, copyright law is set out in the Copyright Act 1968 (Cth). This is federal legislation, and applies throughout Australia. The Commonwealth Attorney-General administers Australian copyright law.</p>
+                  <p style="font-size: 10px; color: #fff;"><b>© Adrian Widjaja 2019</b> | GPL v3.0 | Build 0109-9 | In Australia, copyright law is set out in the Copyright Act 1968 (Cth). This is federal legislation, and applies throughout Australia. The Commonwealth Attorney-General administers Australian copyright law.</p>
                 </div>
-              </div>
-              <br class="d-lg-none">
-              <center>
-                <div class="container d-lg-none rounded d-block">
+                <div class="container mr-3 rounded d-none d-lg-block">
+                  <!-- Modified from the example on https://getbootstrap.com/docs/4.0/components/carousel/ -->
+                  <br>
                   <center>
                     <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-                      <div class="carousel-inner d-block">
+                      <div class="carousel-inner">
                         <div class="carousel-item active">
-                          <img class="d-block w-50" src="https://raw.githubusercontent.com/aidswidjaja/tangible-potato/master/resources/rTeenagers.png" alt="r/teenagers">
+                          <img class="d-block w-75" src="https://raw.githubusercontent.com/aidswidjaja/tangible-potato/master/resources/rTeenagers.png" alt="r/teenagers">
                         </div>
                         <div class="carousel-item">
-                          <img class="d-block" src="https://styles.redditmedia.com/t5_2rjli/styles/communityIcon_hvd4fm0g4pd31.png" alt="r/teenagers">
+                          <img class="d-block w-75" src="https://styles.redditmedia.com/t5_2rjli/styles/communityIcon_hvd4fm0g4pd31.png" alt="r/teenagers">
                         </div>
                         <div class="carousel-item">
-                          <img class="d-block" src="https://styles.redditmedia.com/t5_30g9p/styles/communityIcon_mo7tqqdtxfb21.png" alt="r/teengamingnights">
-                        </center>
+                          <img class="d-block w-75" src="https://styles.redditmedia.com/t5_30g9p/styles/communityIcon_mo7tqqdtxfb21.png" alt="r/teengamingnights">
+                        </div>
                       </div>
-                    </div>
-                  </center>
-                </div>
-              </div>
-            </div>
-
-
-
-            <!-- desktop elements -->
-
-            <div class="container col-12 rounded d-none d-lg-flex", style="height:30vh;"> <!-- Start of row 1-->
-
-
-
-              <!-- Live post from reddit-->
-
-              <div class="container mr-3 d-none d-lg-block bg-orange rounded"; style="overflow: auto;">
-                <br>
-                <div class="text-dark">
-                  <b>What's happening on r/teenagers?</b>
-                </div>
-                <a id="redditlink" href="www.reddit.com/r/teenagers"></a>
-                <p id="redditp"></p>
-                <script src="jsresources/jsonfetch.js"></script>
-                <a tabindex="0" class="btn btn-sm btn-warning" role="button" data-toggle="popover" data-trigger="focus" title="How is this calculated?" data-content="This element uses the fetch() API provided by JavaScript, and retrieves information as JSON data from https://reddit.com/r/teenagers.json. It automatically updates according to Reddit servers, and takes the third-from-the-top post sorted by Hot (I do this to avoid picking up announcements, but sometimes it will collect an announcement post such as Self-Post Weekend if there are three announcement posts stickied). I don't have any control over what it displays, as it is directly connected to Reddit. You can see the code on: github.com/aidswidjaja/jsonfetch where I provide an example with comments if you'd like to make one yourself!"><i>How is this calculated?</i></a>
-
-              </div>
-
-              <!-- Information about r/teenagers-->
-
-              <div class="container col-4 mr-3 d-none d-lg-block bg-blue rounded"; style="overflow: auto;">
-                <br>
-                <div style="color: white;">
-                  <p>r/teenagers is the biggest community forum run by teenagers for teenagers. Our subreddit is primarily for discussions and memes that an average teenager would enjoy to discuss about. We do not have any age-restriction in place but do keep in mind this is targeted for users between the ages of 13 to 19. Parents, teachers, and the like are welcomed to participate and ask any questions!</p>
-
-                  <p>This is a <b>unofficial</b> conceptual website made by me, u/aidswidjaja. It's a milestone for myself, but I won't be maintaining it further, so feel free to use the code under GPL v3.0!</p>
-                </div>
-              </div>
-
-              <!-- Member count -->
-
-              <div class="container col-3 mr-3 d-none d-lg-block bg-cyan rounded"; style="overflow: auto;">
-                <br>
-                <h2>r/teenagers has...</h2>
-                <h4 id="about"></h4>
-                <br>
-                <a href="https://www.reddit.com/r/teenagers/" role="button" class="btn btn-lg btn-light">Visit r/teenagers</a>
-                <script src="jsresources/jsonfetchabout.js"></script>
-              </div>
-
-            </div> <!-- End of Row 1-->
-
-
-            <br> <!-- Start of Row 2 -->
-
-            <div class="container col-12 rounded d-none d-lg-flex", style="height:30vh;">
-
-              <!-- Mobile elements -->
-
-
-              <!-- Discord invite -->
-              <div class="container col-2 mr-3 d-none d-lg-block bg-blurple rounded", style="overflow: auto;">
-                <br>
-                <img src="https://discordapp.com/assets/192cb9459cbc0f9e73e2591b700f1857.svg"></img>
-                <br><br>
-                <a href="https://discordapp.com/invite/teenagers" class="btn btn-lg btn-dark">Join the <b>r/teenagers</b> Discord server</a>
-                <p style="color: #ffffff !important;"><center>it's super fun we promise</p></center></style>
-              </div>
-              <!-- Discord invite for TGN-->
-              <div class="container col-2 mr-3 d-none d-lg-block bg-blurple rounded", style="overflow: auto;">
-                <br>
-                <img src="https://discordapp.com/assets/192cb9459cbc0f9e73e2591b700f1857.svg"></img>
-                <br><br>
-                <a href="https://discordapp.com/invite/SCZpqvN" class="btn btn-lg btn-dark">Join the <b>TGN</b> Discord server</a>
-                <p style="color: #ffffff !important;"><center>we have minecraft</p></center></style>
-              </div>
-              <!-- Steam group invite -->
-              <div class="container col-3 d-none d-lg-block mr-3 rounded", style="overflow: auto; background-color: #2C2E35">
-                <br>
-                <center><img src="https://raw.githubusercontent.com/aidswidjaja/tangible-potato/master/resources/steamlogo.png" style="width: 80%;"></img></center>
-                <br>
-                <center><a href="https://steamcommunity.com/groups/reddit-teenagers" class="btn btn-outline-secondary btn-lg">Join the <b>TGN</b> Steam group</a><center>
-                  <br>
-                  <center><a href="https://steamcommunity.com/groups/reddit-teenagers#announcements" class="btn btn-outline-secondary btn-sm">View the latest announcements</a><center>
-                  </div>
-                  <!-- Teen Gaming Nights -->
-                  <div class="container mr-3 d-none d-lg-block bg-yellow rounded", style="overflow: auto;">
-                    <br>
-                    <div class="text-dark">
-                      <b>What's happening on r/teengamingnights?</b>
-                    </div>
-                    <a id="tgnlink" href="https://www.reddit.com/r/teengamingnights"></a>
-                    <p id="tgn"></p>
-                    <a tabindex="0" class="btn btn-sm btn-info" role="button" data-toggle="popover" data-trigger="focus" title="How is this calculated?" data-content="This element uses the fetch() API provided by JavaScript, and retrieves information as JSON data from https://reddit.com/r/teenagers.json. It automatically updates according to Reddit servers, and takes the second-from-the-top post sorted by Hot (I do this to avoid picking up announcements, but sometimes it will collect an announcement post such as Self-Post Weekend if there are two announcement posts stickied). I don't have any control over what it displays, as it is directly connected to Reddit. You can see the code on: github.com/aidswidjaja/jsonfetch where I provide an example with comments if you'd like to make one yourself!"><i>How is this calculated?</i></a>
-                    <p></p>
-                    <script src="jsresources/jsonfetchtgn.js"></script>
-                  </div>
-                </div> <!-- End of row 2 -->
-
-                <br>
-                <div class="container col-12 rounded d-none d-lg-flex", style="height:30vh;">  <!-- Start of row 3 -->
-
-                  <!-- Mobile elements -->
-
-                  <div class="container mr-3 col-6 d-none d-lg-block bg-teal rounded", style="overflow: auto;"> <!-- Minecraft! -->
-                    <br>
-                    <center>
-                      <h2>Join our Minecraft server!</h2>
-                      <p>Our Minecraft server is a custom generated survival world with PvP enabled. The server is set to hard difficulty, as a result, mobs can pack quite a punch! The survival world is meant to encompass vanilla gameplay and early Minecraft gameplay environment. Our server runs using very minimal gameplay changes to its core, so towns and settlements are done through player interaction and behavior only, we limit our usage on plugins. To enhance quality of life and for additional security, players can protect their items like chests, doors, and furnaces. Aside from this, the gameplay is entirely vanilla.</p>
-                      <a href="https://osmc.teengamingnights.net/" class="btn btn-outline-dark btn-large"><b>osmc.teengamingnights.net</b></a>
                     </center>
                   </div>
-                  <div class="container mr-3 col-3 bg-purple d-none d-lg-block rounded", style="overflow: auto;"> <!-- things you should know -->
-                    <br>
-                    <a href="/tangible-potato/about.html" class="btn btn-block btn-lg btn-danger"><h1>About this site</h1></a>
-                    <a href="https://www.reddit.com/user/airswidjaja" class="btn btn-block btn-lg btn-danger"><h2>@aidswidjaja</h2></a>
-                    <br>
-                    <p style="font-size: 10px; color: #fff;"><b>© Adrian Widjaja 2019</b> | GPL v3.0 | Build 0109-9 | In Australia, copyright law is set out in the Copyright Act 1968 (Cth). This is federal legislation, and applies throughout Australia. The Commonwealth Attorney-General administers Australian copyright law.</p>
-                  </div>
-                  <div class="container mr-3 rounded d-none d-lg-block">
-                    <!-- Modified from the example on https://getbootstrap.com/docs/4.0/components/carousel/ -->
-                    <br>
-                    <center>
-                      <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-                        <div class="carousel-inner">
-                          <div class="carousel-item active">
-                            <img class="d-block w-75" src="https://raw.githubusercontent.com/aidswidjaja/tangible-potato/master/resources/rTeenagers.png" alt="r/teenagers">
-                          </div>
-                          <div class="carousel-item">
-                            <img class="d-block w-75" src="https://styles.redditmedia.com/t5_2rjli/styles/communityIcon_hvd4fm0g4pd31.png" alt="r/teenagers">
-                          </div>
-                          <div class="carousel-item">
-                            <img class="d-block w-75" src="https://styles.redditmedia.com/t5_30g9p/styles/communityIcon_mo7tqqdtxfb21.png" alt="r/teengamingnights">
-                          </div>
-                        </div>
-                      </center>
-                    </div>
 
-                  </div> <!-- End of row 3 -->
+                </div> <!-- End of row 3 -->
 
 
 
 
 
 
-                </body>
-                </html>
+              </body>
+              </html>
