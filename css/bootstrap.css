@@ -62,11 +62,7 @@ html {
 }
 ::-webkit-scrollbar {
     width: 0px;
-    background: transparent; /* make scrollbar transparent */
-}
-
-.invisible-scrollbar {
-  display: none; /* make scrollbar transparent */
+    background: transparent; /* Chrome/Safari (Webkit) */
 }
 
 *,
@@ -595,6 +591,7 @@ pre code {
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
+  scrollbar-width: none; /* Firefox */
 }
 
 @media (min-width: 576px) {
