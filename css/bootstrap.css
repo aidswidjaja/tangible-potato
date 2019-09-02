@@ -59,6 +59,8 @@
 
 html {
   overflow: scroll;
+  -ms-overflow-style: none;
+
 }
 ::-webkit-scrollbar {
     width: 0px;
